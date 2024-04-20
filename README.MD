@@ -21,7 +21,7 @@ This app was built with the following tech stack:
 1. Make sure you have [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed on your machine
 2. Clone or download the repository
 
-   ```git clone .https://github.com/ilmiirf/mern-app
+   ```git clone https://github.com/ilmiirf/MERN__login-auth.git
 
    ```
 
