@@ -1,12 +1,15 @@
 import { Router } from "express";
 import * as controller from "../controllers/appController";
 import Auth, { localVariable } from "../middleware/auth";
+import { registerMail } from "../controllers/mailer";
 
 const router = Router();
 
 router.route("/register").post(controller.register);
-router.route("/register-mail").post();
-router.route("/authenticate").post();
+router.route("/register-mail").post(registerMail);
+router.route("/authenticate").post((req, res) => {
+  res.end();
+});
 router.route("/login").post(controller.verifyUser, controller.login);
 
 router.route("/user/:username").get(controller.getUser);
